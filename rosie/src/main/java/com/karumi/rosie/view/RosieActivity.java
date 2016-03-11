@@ -17,7 +17,7 @@
 package com.karumi.rosie.view;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
 import butterknife.ButterKnife;
 import com.karumi.rosie.application.RosieApplication;
 import com.karumi.rosie.module.RosieActivityModule;
@@ -30,7 +30,7 @@ import java.util.List;
  * library. All activities in this project should extend from this one to be able to use core
  * features like view injection, dependency injection or Rosie presenters.
  */
-public abstract class RosieActivity extends FragmentActivity implements RosiePresenter.View {
+public abstract class RosieActivity extends AppCompatActivity implements RosiePresenter.View {
 
   private ObjectGraph activityScopeGraph;
   private PresenterLifeCycleLinker presenterLifeCycleLinker;
